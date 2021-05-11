@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins';
+
+*,::after,::before {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost';
+}
+
+body {
+  background-color: #D2FFDC;
+}
+
+.header {
+  padding: 18px 14px 0px 14px;
+  display: flex;
+  justify-content: space-between;
+  &__name {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 44px;
+    color: #915ECE;
+  }
+  &__pick {
+    font-weight: 700;
+    font-size: 72px;
+    color: #915ECE;
+    -webkit-text-stroke: 1px #000;
+  }
+}
