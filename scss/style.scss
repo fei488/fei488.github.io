@@ -12,6 +12,10 @@ body {
   background-color: #D2FFDC;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
   padding: 18px 14px 0px 14px;
   display: flex;
@@ -26,6 +30,105 @@ body {
     font-weight: 700;
     font-size: 72px;
     color: #915ECE;
-    -webkit-text-stroke: 1px #000;
+  }
+}
+
+.activity {
+  margin: 0 auto;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../img/back.svg') center center/cover no-repeat; */
+  }
+  &__title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  &__btn {
+    position: absolute;
+    bottom: 80px;
+    cursor: pointer;
+    width: 165px;
+    height: 45px;
+    background: #7EB2FF;
+    color: #000;
+    border-radius: 15px;
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: box-shadow 0.5s;
+    text-decoration: none;
+    &:hover{
+      color: #000;
+      box-shadow: 0 0 10px #2062C3;
+    }
+  }
+}
+
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.6);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  &.open{
+    opacity: 1;
+    visibility: visible;
+    .popup__content {
+      transform: translate(0px, 0%);
+      opacity: 1;
+    }
+  }
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+  &__content{
+    position: relative;
+    color: #000;
+    background: #fff;
+    border-radius: 15px;
+    max-width: 600px;
+    padding: 30px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 55px;
+    height: 55px;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
   }
 }

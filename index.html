@@ -12,11 +12,56 @@
   <header class="header">
     <div class="header__name">School <br> Activities</div>
     <div class="header__pick">
-      МАОУ СОШ №67
+      МАОУ СОШ 67
     </div>
     <img src="icons/icon.svg" alt="icon" class="header__icon">
   </header>
-  
+  <main class="main lock-padding">
+    <div class="activity">
+      <div class="activity__item">
+        <img src="img/back.svg" alt="back" class="activity__back">
+        <h2 class="activity__title">Кружок Физики</h2>
+        <a href="#popup_ph" class="activity__btn popup-link">узнать</a>
+      </div>
+      <div class="activity__item">
+        <img src="img/back.svg" alt="back" class="activity__back">
+        <h2 class="activity__title">Кружок ITLife</h2>
+        <a href="#popup_itl" class="activity__btn popup-link" >узнать</a>
+      </div>
+      <div class="activity__item">
+        <img src="img/back.svg" alt="back" class="activity__back">
+        <h2 class="activity__title">АЙТИ куб</h2>
+        <a href="#popup_itсube" class="activity__btn popup-link">узнать</a>
+      </div>
+    </div>
+    <div id="popup_ph" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close close-popup"><img src="icons/cross.svg" alt="cross"></a>
+          <div class="popup__title">Кружок Физики</div>
+          <div class="popup__text">Объяснения теорем и познавательные эксперементы.</div>
+        </div>
+      </div>
+    </div>
+    <div id="popup_itl" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close close-popup"><img src="icons/cross.svg" alt="cross"></a>
+          <div class="popup__title">Кружок ITLife</div>
+          <div class="popup__text">Кружок по програмированнию.</div>
+        </div>
+      </div>
+    </div>
+    <div id="popup_itсube" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close close-popup"><img src="icons/cross.svg" alt="cross"></a>
+          <div class="popup__title">АЙТИ куб</div>
+          <div class="popup__text">Изучение новых навоков в сфере IT технологий и профессий.</div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="js/script.js"></script>
 </body>
 </html>
