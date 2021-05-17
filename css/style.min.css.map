@@ -4,7 +4,8 @@
     "sources": [
         "../scss/style.scss",
         "../scss/_variables.scss",
-        "../scss/_mixins.scss"
+        "../scss/_mixins.scss",
+        "../scss/_media.scss"
     ],
     "names": [],
     "file": "style.min.css"
