@@ -58,8 +58,13 @@
   }
 
   .popup {
+    &__content {
+      padding-top: 55px;
+    }
     &__title {
       font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 0.6em;
     }
     &__text {
       font-size: 30px;
