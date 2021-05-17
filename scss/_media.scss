@@ -10,5 +10,60 @@
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    &__name {
+      text-align: center;
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__pick {
+      text-align: center;
+      font-size: 38px
+    }
+    &__icon {
+      display: none;
+    }
+  }
 
+  .activity {
+    flex-direction: column;
+    align-items: center;
+    &__item {
+      margin-bottom: 20px;
+    }
+    &__back {
+      width: 240px;
+    }
+    &__title {
+      font-size: 25px;
+    }
+    &__btn {
+      bottom: 40px;
+      width: 150px;
+      height: 40px;
+      font-size: 22px;
+      line-height: 40px;
+    }
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 25px;
+    &__btn {
+      height: 50px;
+      width: 170px;  
+    }
+  }
+
+  .popup {
+    &__title {
+      font-size: 36px;
+    }
+    &__text {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
 }
