@@ -1,38 +1,74 @@
 @media screen and (max-width: 1200px) {
+  .activity {
+    &__item {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 576px) {
   .header {
-    flex-direction: column;
-    align-items: center;
     &__name {
-      text-align: center;
-      font-size: 32px;
-      line-height: 32px;
+      font-size: 36px;
+      line-height: 36px;
     }
     &__pick {
-      text-align: center;
-      font-size: 38px
+      font-size: 60px;
     }
     &__icon {
-      display: none;
+      width: 90px;
     }
   }
-
   .activity {
     flex-direction: column;
     align-items: center;
     &__item {
       margin-bottom: 20px;
     }
+  }
+  .footer {
+    position: relative;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    &__name {
+      text-align: center;
+    }
+    &__pick {
+      text-align: center;
+    }
+    &__icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    &__name {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    &__pick {
+      font-size: 38px
+    }
+    &__icon {
+      width: 70px;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .activity {
     &__back {
       width: 240px;
     }
@@ -52,8 +88,9 @@
     position: relative;
     margin-top: 25px;
     &__btn {
-      height: 50px;
-      width: 170px;  
+      font-size: 20px;
+      height: 45px;
+      width: 130px;
     }
   }
 

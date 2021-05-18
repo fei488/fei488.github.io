@@ -82,10 +82,10 @@ const bodyUnLock = () => {
     body.classList.remove('lock');
   }, timeout)
 
-  unlock = false;
-  setTimeout(function() {
+  unlock = true;
+/*   setTimeout(function() {
     unlock = true;
-  }, timeout)
+  }, timeout) */
 }
 
 document.addEventListener('keydown', (e) => {
