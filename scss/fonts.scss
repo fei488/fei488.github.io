@@ -16,6 +16,14 @@
 
 @font-face {
   font-family: 'Jost';
+  src: local('Jost-SemiBold'),
+      url('../fonts/Jost-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
   src: local('Jost-Bold'),
       url('../fonts/Jost-Bold.ttf') format('truetype');
   font-weight: 700;
