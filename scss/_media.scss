@@ -59,6 +59,7 @@
   .popup {
     &__content {
       padding: 10px;
+      padding-top: 55px;
     }
   }
 }
@@ -109,9 +110,6 @@
   }
 
   .popup {
-    &__content {
-      padding-top: 50px;
-    }
     &__close {
       right: 3px;
       top: 3px;
@@ -122,8 +120,8 @@
       margin-bottom: 0.5em;
     }
     &__text {
-      font-size: 27px;
-      line-height: 23px;
+      font-size: 23px;
+      line-height: 20px;
     }
     &__icon {
       width: 40px;
